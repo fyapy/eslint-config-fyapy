@@ -25,8 +25,10 @@
   "scripts": {
     "setup": "cd ../eslint-config-fyapy-base && yarn && yarn link && cd - && yarn link  eslint-config-fyapy-base"
   },
+  "dependencies": {
+    "eslint-config-fyapy-base": "^0.10.1"
+  },
   "peerDependencies": {
-    "eslint-config-fyapy-base": "^0.10.1",
     "eslint-plugin-unicorn": "^36.0.0"
   }
 }

@@ -1,0 +1,32 @@
+{
+  "name": "eslint-config-fyapy-node",
+  "version": "0.9.0",
+  "description": "Fyape NodeJS TypeScript ESLint config, following my styleguide",
+  "keywords": [
+    "eslint",
+    "node",
+    "eslintconfig",
+    "config",
+    "typescript",
+    "styleguide",
+    "es2020"
+  ],
+  "author": "Amir Abdullin <amir.abdullin.a@gmail.com>",
+  "homepage": "https://github.com/fyapy/eslint-config-fyapy",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fyapy/eslint-config-fyapy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fyapy/eslint-config-fyapy/issues"
+  },
+  "scripts": {
+    "setup": "cd ../eslint-config-fyapy-base && yarn && yarn link && cd - && yarn link  eslint-config-fyapy-base"
+  },
+  "peerDependencies": {
+    "eslint-config-fyapy-base": "^0.9.0",
+    "eslint-plugin-unicorn": "^36.0.0"
+  }
+}

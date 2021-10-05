@@ -21,6 +21,9 @@
     "styleguide",
     "es2020"
   ],
+  "scripts": {
+    "prepare": "install-peers"
+  },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
@@ -28,5 +31,8 @@
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.24.2",
     "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "install-peers-cli": "^2.2.0"
   }
 }

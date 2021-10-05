@@ -23,6 +23,7 @@
     "url": "https://github.com/fyapy/eslint-config-fyapy/issues"
   },
   "scripts": {
+    "prepare": "install-peers",
     "setup": "cd ../eslint-config-fyapy-base && yarn && yarn link && cd - && yarn link  eslint-config-fyapy-base"
   },
   "dependencies": {
@@ -30,5 +31,8 @@
   },
   "peerDependencies": {
     "eslint-plugin-unicorn": "^36.0.0"
+  },
+  "devDependencies": {
+    "install-peers-cli": "^2.2.0"
   }
 }

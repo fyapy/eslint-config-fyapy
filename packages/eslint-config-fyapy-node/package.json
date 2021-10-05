@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-fyapy-node",
-  "version": "0.10.6",
+  "version": "0.10.7",
   "description": "Fyape NodeJS TypeScript ESLint config, following my styleguide",
   "keywords": [
     "eslint",

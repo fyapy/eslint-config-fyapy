@@ -23,7 +23,7 @@ module.exports = {
     '@typescript-eslint/indent': ['error', 2, { SwitchCase: 1 }],
     'linebreak-style': 0,
     quotes: ['error', 'single', { avoidEscape: true }],
-    'max-len': ['error', 103, { ignoreTrailingComments: true }],
+    'max-len': ['error', 110, { ignoreTrailingComments: true }],
     'default-case': 'off',
     'no-prototype-builtins': 'off',
     'no-throw-literal': 'off',

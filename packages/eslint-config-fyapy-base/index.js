@@ -95,5 +95,6 @@ module.exports = {
     '@typescript-eslint/no-extra-semi': ['error'],
     '@typescript-eslint/interface-name-prefix': 'off',
     'arrow-body-style': ['error', 'as-needed'],
+    'array-bracket-spacing': ['error', 'never', { 'objectsInArrays': false }],
   },
 }

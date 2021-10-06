@@ -1,0 +1,31 @@
+{
+  "name": "eslint-config-fyapy-vue",
+  "version": "0.10.7",
+  "description": "Fyape Vue 3 TypeScript ESLint config, following our styleguide",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "vue",
+    "config",
+    "typescript",
+    "styleguide"
+  ],
+  "author": "Amir Abdullin <amir.abdullin.a@gmail.com>",
+  "homepage": "https://github.com/fyapy/eslint-config-fyapy",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fyapy/eslint-config-fyapy.git"
+  },
+  "scripts": {
+    "setup": "cd ../eslint-config-fyapy-base && yarn && yarn link && cd - && yarn link  eslint-config-fyapy-base"
+  },
+  "bugs": {
+    "url": "https://github.com/fyapy/eslint-config-fyapy/issues"
+  },
+  "dependencies": {
+    "eslint-config-fyapy-base": "^0.10.6",
+    "eslint-plugin-vue": "^7.19.0"
+  }
+}

@@ -68,5 +68,8 @@ module.exports = {
     }],
     'vue/no-useless-template-attributes': 'error',
     'vue/padding-line-between-blocks': ['error', 'always'],
+    'vue/camelcase': 'error',
+    'vue/component-name-in-template-casing': ['error', 'kebab-case'],
+    'vue/prop-name-casing': ['error', 'camelCase'],
   }
 }

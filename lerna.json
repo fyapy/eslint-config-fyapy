@@ -2,6 +2,13 @@
   "packages": [
     "packages/*"
   ],
+  "ignoreChanges": [
+    "**/CHANGELOG.md",
+    "**/node_modules/**",
+    "**/package.json",
+    "**/*.md",
+    "**/perf/**"
+  ],
   "npmClient": "yarn",
-  "version": "0.11.4"
+  "version": "independent"
 }

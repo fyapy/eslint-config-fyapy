@@ -96,5 +96,12 @@ module.exports = {
     '@typescript-eslint/interface-name-prefix': 'off',
     'arrow-body-style': ['error', 'as-needed'],
     'array-bracket-spacing': ['error', 'never', { 'objectsInArrays': false }],
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        'selector': 'variableLike',
+        'format': ['camelCase', 'UPPER_CASE'],
+      },
+    ],
   },
 }

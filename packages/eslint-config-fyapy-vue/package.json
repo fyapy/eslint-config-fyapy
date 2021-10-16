@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-fyapy-vue",
-  "version": "0.11.2",
+  "version": "0.11.3",
   "description": "Fyape Vue 3 TypeScript ESLint config, following our styleguide",
   "keywords": [
     "eslint",
@@ -25,7 +25,7 @@
     "url": "https://github.com/fyapy/eslint-config-fyapy/issues"
   },
   "dependencies": {
-    "eslint-config-fyapy-base": "^0.11.1",
+    "eslint-config-fyapy-base": "^0.11.3",
     "eslint-plugin-vue": "^7.19.0"
   }
 }

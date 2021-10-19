@@ -103,5 +103,6 @@ module.exports = {
         'format': ['camelCase', 'UPPER_CASE', 'PascalCase'],
       },
     ],
+    'no-async-promise-executor': 'off',
   },
 }

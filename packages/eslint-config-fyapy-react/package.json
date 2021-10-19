@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-fyapy-react",
-  "version": "0.11.4",
+  "version": "0.11.5",
   "description": "Fyape React TypeScript ESLint config, following our styleguide",
   "keywords": [
     "eslint",
@@ -25,7 +25,7 @@
     "setup": "cd ../eslint-config-fyapy-base && yarn && yarn link && cd - && yarn link  eslint-config-fyapy-base"
   },
   "dependencies": {
-    "eslint-config-fyapy-base": "^0.11.4",
+    "eslint-config-fyapy-base": "^0.11.5",
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.26.1",

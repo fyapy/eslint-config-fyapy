@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "eslint-config-fyapy-base": "^0.11.5",
-    "eslint-plugin-vue": "^7.19.0"
+    "eslint-plugin-vue": "^8.1.1",
+    "typescript": "^4.4.4"
   }
 }

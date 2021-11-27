@@ -71,5 +71,11 @@ module.exports = {
     'vue/camelcase': 'error',
     'vue/component-name-in-template-casing': ['error', 'kebab-case'],
     'vue/prop-name-casing': ['error', 'camelCase'],
-  }
+  },
+  globals: {
+    defineProps: "readonly",
+    defineEmits: "readonly",
+    defineExpose: "readonly",
+    withDefaults: "readonly"
+  },
 }

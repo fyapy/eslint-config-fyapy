@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-fyapy-node",
-  "version": "0.11.5",
+  "version": "0.11.6",
   "description": "Fyape NodeJS TypeScript ESLint config, following my styleguide",
   "keywords": [
     "eslint",
@@ -26,7 +26,7 @@
     "setup": "cd ../eslint-config-fyapy-base && yarn && yarn link && cd - && yarn link  eslint-config-fyapy-base"
   },
   "dependencies": {
-    "eslint-config-fyapy-base": "^0.11.5",
+    "eslint-config-fyapy-base": "^0.11.6",
     "eslint-plugin-unicorn": "^36.0.0"
   }
 }

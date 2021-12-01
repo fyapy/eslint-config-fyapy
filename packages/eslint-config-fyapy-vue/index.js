@@ -10,7 +10,15 @@ module.exports = {
   },
   rules: {
     'vue/html-indent': ['error', 2],
-    'vue/html-self-closing': 'error',
+    'vue/html-self-closing': ['error', {
+      'html': {
+        'void': 'never',
+        'normal': 'any',
+        'component': 'always',
+      },
+      'svg': 'always',
+      'math': 'always',
+    }],
     'vue/html-closing-bracket-newline': 'error',
     'vue/html-quotes': ['error', 'double', { 'avoidEscape': true }],
     'vue/max-attributes-per-line': ['error', {

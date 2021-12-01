@@ -101,6 +101,10 @@ module.exports = {
       {
         'selector': 'variableLike',
         'format': ['camelCase', 'UPPER_CASE', 'PascalCase'],
+        'filter': {
+          'regex': '^_([A-Z]+)?',
+          'match': false,
+        },
       },
     ],
     'no-async-promise-executor': 'off',

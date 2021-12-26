@@ -8,6 +8,9 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
   },
+  env: {
+    'vue/setup-compiler-macros': true,
+  },
   rules: {
     'vue/html-indent': ['error', 2],
     'vue/html-self-closing': ['error', {
@@ -36,7 +39,6 @@ module.exports = {
     }],
     'vue/no-spaces-around-equal-signs-in-attribute': ['error'],
     'vue/one-component-per-file': 'error',
-    'vue/prop-name-casing': ['error', 'snake_case'],
     'vue/require-prop-types': 'error',
     'vue/singleline-html-element-content-newline': 'off',
     'vue/v-bind-style': ['error', 'shorthand'],
@@ -77,13 +79,47 @@ module.exports = {
     'vue/camelcase': 'error',
     'vue/component-name-in-template-casing': ['error', 'kebab-case'],
     'vue/prop-name-casing': ['error', 'camelCase'],
-  },
-  globals: {
-    defineProps: "readonly",
-    defineEmits: "readonly",
-    defineExpose: "readonly",
-    withDefaults: "readonly",
-    defineEmits: "readonly",
-    defineExpose: "readonly",
+    'vue/multi-word-component-names': 'off',
+    'vue/require-default-prop': 'off',
+    'vue/no-setup-props-destructure': 'off',
+    'import/order': [
+      'error',
+      {
+        alphabetize: { order: 'asc' },
+        pathGroups: [
+          {
+            pattern: `{${foldersUnderSrc.join(',')}}/**`,
+            group: 'index',
+            position: 'before',
+          },
+          {
+            pattern: `{${foldersUnderSrc.join(',')}}`,
+            group: 'index',
+            position: 'before',
+          },
+        ],
+        pathGroupsExcludedImportTypes: ['type'],
+        groups: [
+          'type',
+          'builtin',
+          'external',
+          'index',
+          'parent',
+          'sibling',
+        ],
+      },
+    ],
+    'vue/block-tag-newline': ['error', {
+      'blocks': {
+        'template': {
+          'singleline': 'always',
+          'maxEmptyLines': 0,
+        },
+        'script': {
+          'multiline': 'always',
+          'maxEmptyLines': 0,
+        },
+      },
+    }],
   },
 }

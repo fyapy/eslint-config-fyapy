@@ -1,3 +1,10 @@
+const { readdirSync } = require('fs')
+const { resolve } = require('path')
+
+const foldersUnderSrc = readdirSync(resolve(process.cwd(), 'src'), { withFileTypes: true })
+  .filter(dirent => dirent.isDirectory())
+  .map(dirent => dirent.name)
+
 module.exports = {
   extends: [
     'plugin:vue/vue3-strongly-recommended',

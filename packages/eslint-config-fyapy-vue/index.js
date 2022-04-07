@@ -1,9 +1,14 @@
-const { readdirSync } = require('fs')
+const { readdirSync, existsSync } = require('fs')
 const { resolve } = require('path')
 
-const foldersUnderSrc = readdirSync(resolve(process.cwd(), 'src'), { withFileTypes: true })
-  .filter(dirent => dirent.isDirectory())
-  .map(dirent => dirent.name)
+const srcPath = resolve(process.cwd(), 'src')
+const srcExist = existsSync(srcPath)
+
+const foldersUnderSrc = srcExist
+  ? readdirSync(srcPath, { withFileTypes: true })
+      .filter(dirent => dirent.isDirectory())
+      .map(dirent => dirent.name)
+  : []
 
 module.exports = {
   extends: [
@@ -93,18 +98,22 @@ module.exports = {
       'error',
       {
         alphabetize: { order: 'asc' },
-        pathGroups: [
-          {
-            pattern: `{${foldersUnderSrc.join(',')}}/**`,
-            group: 'index',
-            position: 'before',
-          },
-          {
-            pattern: `{${foldersUnderSrc.join(',')}}`,
-            group: 'index',
-            position: 'before',
-          },
-        ],
+        ...(srcExist
+          ? {
+            pathGroups: [
+              {
+                pattern: `{${foldersUnderSrc.join(',')}}/**`,
+                group: 'index',
+                position: 'before',
+              },
+              {
+                pattern: `{${foldersUnderSrc.join(',')}}`,
+                group: 'index',
+                position: 'before',
+              },
+            ],
+          }
+          : {}),
         pathGroupsExcludedImportTypes: ['type'],
         groups: [
           'type',
